@@ -1,4 +1,6 @@
 import React from 'react';
+// icon
+import { AiOutlineWhatsApp } from 'react-icons/ai';
 // count up
 import CountUp from 'react-countup';
 // intersection observer hook
@@ -64,7 +66,15 @@ const About = () => {
               </div>
             </div>
             <div>
-              <button className="btn btn-lg">Contact me</button>
+              <button className="btn btn-lg">
+                <a
+                  href="https://wa.me/+8801718053201"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="flex items-center">
+                  Contact me <AiOutlineWhatsApp className="text-xl ml-2" />
+                </a>
+              </button>
             </div>
           </motion.div>
         </div>

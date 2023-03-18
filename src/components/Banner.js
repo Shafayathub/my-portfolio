@@ -3,6 +3,8 @@ import React from 'react';
 import Image from '../assets/shafayat1.png';
 // icons
 import { FaGithub, FaLinkedin, FaFacebook } from 'react-icons/fa';
+import { AiOutlineWhatsApp } from 'react-icons/ai';
+
 // Type Animation
 import { TypeAnimation } from 'react-type-animation';
 // motion
@@ -52,17 +54,40 @@ const Banner = () => {
               appreciate quality.
             </motion.p>
             <div className="mb-6">
-              <button className="btn btn-lg">Contact me</button>
+              <button className="btn btn-lg">
+                <a
+                  href="https://wa.me/+8801718053201"
+                  rel="noreferrer"
+                  target="_blank"
+                  className="flex items-center">
+                  Contact me <AiOutlineWhatsApp className="text-xl ml-2" />
+                </a>
+              </button>
             </div>
             <div className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0">
               <button>
-                <FaLinkedin></FaLinkedin>
+                <a
+                  href="https://www.linkedin.com/in/md-shafayat-islam-97000110b/"
+                  rel="noreferrer"
+                  target="_blank">
+                  <FaLinkedin></FaLinkedin>
+                </a>
               </button>
               <button>
-                <FaGithub></FaGithub>
+                <a
+                  href="https://github.com/Shafayathub"
+                  rel="noreferrer"
+                  target="_blank">
+                  <FaGithub></FaGithub>
+                </a>
               </button>
               <button>
-                <FaFacebook></FaFacebook>
+                <a
+                  href="https://www.facebook.com/MSI.NAHIN"
+                  rel="noreferrer"
+                  target="_blank">
+                  <FaFacebook></FaFacebook>
+                </a>
               </button>
             </div>
           </div>

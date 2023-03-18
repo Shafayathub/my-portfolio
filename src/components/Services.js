@@ -44,7 +44,14 @@ const Services = () => {
               A self-taught Web developer since 2022 and an enthusiastic
               explorer in this field.
             </h3>
-            <button className="btn btn-sm">See my work</button>
+            <button className="btn btn-sm">
+              <a
+                href="https://github.com/Shafayathub"
+                rel="noreferrer"
+                target="_blank">
+                see my work
+              </a>
+            </button>
           </motion.div>
           {/* services */}
           <div className="flex-1">
@@ -58,7 +65,7 @@ const Services = () => {
                     whileInView={'show'}
                     viewport={{ once: 'false', amount: 0.3 }}
                     key={index}
-                    className="border-b border-white/20 mb-6 flex items-center py-6">
+                    className="border-b border-white/20 mb-6 flex flex-col md:flex-row items-center py-6">
                     <div className="max-w-[476px]">
                       <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6">
                         {service.name}

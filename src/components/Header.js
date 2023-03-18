@@ -1,6 +1,8 @@
 import React from 'react';
 // images
 import logo from '../assets/logo.png';
+// icons
+import { AiOutlineWhatsApp } from 'react-icons/ai';
 
 const Header = () => {
   return (
@@ -8,10 +10,19 @@ const Header = () => {
       <div className="container mx-auto">
         <div className="flex justify-between items-center">
           {/* logo */}
-          <a href="#">
+          <a
+            href="https://www.linkedin.com/in/md-shafayat-islam-97000110b/"
+            rel="noreferrer"
+            target="_blank">
             <img src={logo} alt="MD Shafayat Islam" />
           </a>
-          <button className="btn btn-sm">Work with me</button>
+          <a
+            href="https://wa.me/+8801718053201"
+            rel="noreferrer"
+            target="_blank"
+            className="btn btn-sm flex items-center">
+            Contact me <AiOutlineWhatsApp className="text-xl ml-2" />
+          </a>
         </div>
       </div>
     </header>
